@@ -8,13 +8,13 @@ En esta entrada vamos a resolver la máquina **Meow** de HackTheBox, una de las 
 
 Lo primero que hago siempre antes de empezar a enumerar es comprobar si la máquina la podemos ver. Para ello, simplemente le hago un **ping** a la IP que nos da HackTheBox. Tal y como se ve en la captura, la máquina responde correctamente, así que sabemos que está activa y accesible desde nuestra VPN. Con eso confirmado, ya podemos pasar a la siguiente fase: **enumerar puertos y servicios** para ver qué está ofreciendo la máquina y por dónde podemos empezar a trabajar.
 
-<img src="file:///home/oxy/.config/marktext/images/2025-11-23-17-06-52-image.png" title="" alt="" data-align="center">
+`ping 10.129.26.246`
 
 Para empezar con la enumeración de puertos, lanzo un **nmap -sV** contra la IP de la máquina. Con este escaneo obtenemos qué puertos están abiertos y qué servicios están corriendo en cada uno.
 
 En los resultados  aparece el **puerto 23** abierto, que corresponde al servicio **Telnet**. Este servicio es antiguo, inseguro y transmite todo en claro, así que suele ser un vector bastante evidente para empezar. Con esa información, ya tenemos un punto de entrada claro: **vamos a atacar la máquina a través de Telnet**.
 
-<img title="" src="file:///home/oxy/.config/marktext/images/2025-11-23-17-10-41-image.png" alt="" data-align="center">
+`sudo nmap -sV 10.129.26.246`
 
 A veces, por malas configuraciones o por pura pereza, algunas (realmente muchas…) cuentas importantes en un sistema pueden quedar con la **contraseña en blanco**. Esto sigue ocurriendo en muchos dispositivos de red y en máquinas básicas, lo que las deja expuestas a ataques ridículamente simples: probar a iniciar sesión con usuarios comunes sin poner ninguna contraseña.
 
@@ -30,13 +30,13 @@ En servicios inseguros como **Telnet**, donde todo va en claro, basta con introd
 
 En mi caso, he probado con **root**… y mágicamente hemos accedido :)
 
-![](/home/oxy/.config/marktext/images/2025-11-23-17-12-11-image.png)
+![]([/home/oxy/.config/marktext/images/2025-11-23-17-12-11-image.png](https://xanross.com/wp-content/uploads/2025/11/image.png))
 
 Como se ve en la captura, una vez dentro lanzo un **ls** para listar el contenido del directorio. Ahí aparece un archivo llamado **flag.txt**, que obviamente es el objetivo principal de esta máquina. Al abrirlo, encontramos la **bandera**, así que ya habríamos completado la máquina **Meow** de HTB sin ninguna complicación.
 
 Con la flag obtenida, ya podemos ir directos a rellenar el **cuestionario** y dar la máquina por finalizada.
 
-![](/home/oxy/.config/marktext/images/2025-11-23-17-12-47-image.png)
+![]([/home/oxy/.config/marktext/images/2025-11-23-17-12-47-image.png](https://xanross.com/wp-content/uploads/2025/11/image-1.png))
 
 ## Cuestionario
 
