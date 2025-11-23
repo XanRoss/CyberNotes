@@ -30,13 +30,13 @@ En servicios inseguros como **Telnet**, donde todo va en claro, basta con introd
 
 En mi caso, he probado con **root**… y mágicamente hemos accedido :)
 
-![]([/home/oxy/.config/marktext/images/2025-11-23-17-12-11-image.png](https://xanross.com/wp-content/uploads/2025/11/image.png))
+![Imagen]([/home/oxy/.config/marktext/images/2025-11-23-17-12-11-image.png](https://xanross.com/wp-content/uploads/2025/11/image.png))
 
 Como se ve en la captura, una vez dentro lanzo un **ls** para listar el contenido del directorio. Ahí aparece un archivo llamado **flag.txt**, que obviamente es el objetivo principal de esta máquina. Al abrirlo, encontramos la **bandera**, así que ya habríamos completado la máquina **Meow** de HTB sin ninguna complicación.
 
 Con la flag obtenida, ya podemos ir directos a rellenar el **cuestionario** y dar la máquina por finalizada.
 
-![]([/home/oxy/.config/marktext/images/2025-11-23-17-12-47-image.png](https://xanross.com/wp-content/uploads/2025/11/image-1.png))
+![Imagen]([/home/oxy/.config/marktext/images/2025-11-23-17-12-47-image.png](https://xanross.com/wp-content/uploads/2025/11/image-1.png))
 
 ## Cuestionario
 
