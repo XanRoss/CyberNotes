@@ -36,7 +36,7 @@ Como se ve en la captura, una vez dentro lanzo un **ls** para listar el contenid
 
 Con la flag obtenida, ya podemos ir directos a rellenar el **cuestionario** y dar la máquina por finalizada.
 
-![Imagen]([/home/oxy/.config/marktext/images/2025-11-23-17-12-47-image.png](https://xanross.com/wp-content/uploads/2025/11/image-1.png))
+![Imagen](https://xanross.com/wp-content/uploads/2025/11/image-1.png)
 
 ## Cuestionario
 
